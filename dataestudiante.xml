@@ -1,0 +1,10 @@
+<estudiantes>
+	<estudiante>
+		<orden>001</orden>
+		<nombre>Marco</nombre>
+	</estudiante>
+	<estudiante>
+		<orden>002</orden>
+		<nombre>Johann</nombre>
+	</estudiante>
+</estudiantes>

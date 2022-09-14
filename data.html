@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tabla 1</title>
+</head>
+<body>
+	
+<script type="text/javascript">
+	
+	var data=
+	{
+			ORDEN:"001",
+			NOMBRES:"Juan Perez"
+	}
+
+	string_data=JSON.stringify(data)
+
+	console.log(data);
+	console.log(string_data);
+
+
+	var array_data=[
+	{
+			ORDEN:"001",
+			NOMBRES:"Juan Perez"
+	},
+	{
+			ORDEN:"002",
+			NOMBRES:"Jorge Sanchez"
+	},
+	];
+
+	//console.log(array_data)
+
+document.write(`<table>
+	<thead>
+	<tr><th>ORDEN</th><th>NOMBRES<th></tr>
+	</thead>
+	<body>
+`);
+
+for(a=0;a<array_data.length;a++)
+{
+	document.write("<tr><td>"+array_data[a].ORDEN+"</td><td>"+array_data[a].NOMBRES+"</td></tr>");
+}
+
+document.write(`<body></table>`);
+</script>
+
+
+<!--
+<table>
+	<thead>
+	</th><tr><th>ORDEN</th><th>NOMBRES<th></tr>
+	</thead>
+	<body>
+		<tr><td>001</td><td>Juan Perez<td></tr>
+		<tr><td>002</td><td>Jorge Sanchez<td></tr>
+	</body>
+</table>
+-->
+
+</body>
+</html>
